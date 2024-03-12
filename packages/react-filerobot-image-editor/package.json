@@ -25,7 +25,8 @@
     "annotate"
   ],
   "files": [
-    "lib"
+    "lib",
+    "src"
   ],
   "dependencies": {
     "@babel/runtime": "^7.17.2",
