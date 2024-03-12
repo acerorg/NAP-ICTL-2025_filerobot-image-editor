@@ -316,12 +316,6 @@ const App = () => {
 
   const renderContent = () => (
     <>
-      {!showCanvasOnly && (
-        <>
-          {showTabsDrawer && <TabsDrawer toggleMainMenu={toggleMainMenu} />}
-          <Topbar toggleMainMenu={toggleMainMenu} />
-        </>
-      )}
       {originalImage && feedback.duration !== 0 && (
         <StyledMainContent className="FIE_main-container">
           {!showCanvasOnly && !showTabsDrawer && (
@@ -337,6 +331,12 @@ const App = () => {
             {!showCanvasOnly && <ToolsBar isPhoneScreen={isPhoneScreen} />}
           </StyledCanvasAndTools>
         </StyledMainContent>
+      )}
+      {!showCanvasOnly && (
+        <>
+          {showTabsDrawer && <TabsDrawer toggleMainMenu={toggleMainMenu} />}
+          <Topbar toggleMainMenu={toggleMainMenu} />
+        </>
       )}
     </>
   );
