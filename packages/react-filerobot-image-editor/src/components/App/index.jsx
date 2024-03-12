@@ -66,7 +66,7 @@ const App = () => {
     noCrossOrigin,
   } = config;
 
-  const showTabsDrawer = window.matchMedia('(max-width: 760px)').matches;
+  const showTabsDrawer = false;
 
   const [observeResize, unobserveElement] = useResizeObserver();
   const [rootSize, setRootSize] = useState({
