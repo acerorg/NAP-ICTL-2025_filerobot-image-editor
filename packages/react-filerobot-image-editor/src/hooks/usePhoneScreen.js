@@ -1,4 +1,3 @@
-const usePhoneScreen = (screenWidth = 438) =>
-  window.matchMedia(`(max-width: ${screenWidth}px)`).matches;
+const usePhoneScreen = (screenWidth = 438) => false;
 
 export default usePhoneScreen;
